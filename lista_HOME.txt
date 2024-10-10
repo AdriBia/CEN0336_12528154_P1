@@ -1,0 +1,16 @@
+total 60
+drwxr-xr-x 3 adribia adribia 4096 Oct 10 12:28 CEN0336_12528154_P1
+-rw-r--r-- 1 adribia adribia  749 Sep 12 18:19 bissexto.py
+-rw-r--r-- 1 adribia adribia  217 Sep 12 20:55 bissexto_aula.py
+drwxr-xr-x 3 adribia adribia 4096 Sep 12 15:37 cen0336
+-rw-r--r-- 1 adribia adribia  159 Sep 19 20:30 dna_r.py
+-rw-r--r-- 1 adribia adribia  954 Sep 12 18:20 p213.py
+-rw-r--r-- 1 adribia adribia  945 Sep 12 18:20 p213.py.save
+-rw-r--r-- 1 adribia adribia  105 Sep 12 17:50 p24.py
+-rw-r--r-- 1 adribia adribia  624 Sep 12 18:12 p26.py
+-rw-r--r-- 1 adribia adribia  154 Sep 12 20:10 p27.py
+-rw------- 1 adribia adribia   88 Sep 12 20:38 p27.py.save
+drwxr-xr-x 2 adribia adribia 4096 Sep 12 15:22 problemsets
+-rwxr-xr-x 1 adribia adribia   97 Sep 11 23:30 python.py
+drwxr-xr-x 2 adribia adribia 4096 Oct 10 13:00 random
+-rw-r--r-- 1 adribia adribia  297 Sep 19 20:19 sequence.py
