@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 
-# importa a biblioteca sys, permitindo receber os parâmetros a partir da linha de comando
-import sys
+import sys # importa a biblioteca sys, permitindo receber os parâmetros a partir da linha de comando.
 
 # testar o número de argumentos para garantir que sejam entregues sete argumentos
 if len(sys.argv) != 8:
-    print ("Por favor, informe os sete argumentos")
+    print ("Por favor, a sequência seguida de seis coordenadas")
     exit(1) # o programa finaliza se não houver sete argumentos
 
-# atribuir os sete argumentos as variaveis
+# atribuir os sete argumentos às variáveis
 DNA = (sys.argv[1])
 n1 = (sys.argv[2])
 n2 = (sys.argv[3])
@@ -17,27 +16,31 @@ n4 = (sys.argv[5])
 n5 = (sys.argv[6])
 n6 = (sys.argv[7])
 
-# transforma a sequência de DNA deixando todas as letras maiusculas
+# verificar se a sequência é uma string que contém apenas letras.
+if not DNA.isalpha():
+	print("Por favor, certifique-se que a sequência contenha apenas letras")
+	exit(1) #se houver algum número entre os nucleotídeos, o programa encerra.
+
+# transformar a sequência de DNA deixando todas as letras maiusculas
 DNA = DNA.upper()
 
-# atribui o tamanho da sequência de DNA a uma variavel
+# atribuir o tamanho da sequência de DNA à uma variável
 tamanho = len(DNA)
 
-# verifica se todos os argumentos são números inteiros e positivos
+# verificar se todas as coordenadas são números inteiros e positivos
 if n1.isdigit() and n2.isdigit() and n3.isdigit() and n4.isdigit() and n5.isdigit() and n6.isdigit():
     n1 = int(n1)
     n2 = int(n2)
     n3 = int(n3)
     n4 = int(n4)
     n5 = int(n5)
-    n6 = int(n6) 	# transforma todos os dados de string da linha de comando para numeros inteiros
+    n6 = int(n6) 	# transforma todos os dados de string da linha de comando para números inteiros
     if not (0 < n1 <= tamanho and 0 < n2 <= tamanho and 0 < n3 <= tamanho and 0 < n4 <= tamanho and 0 < n5 <= tamanho and 0 < n6 <= tamanho):
-        print ("Por favor, certifique-se de que os numeros sao positivos e não maiores do que o tamanho da sequencia de DNA")
+        print ("Por favor, certifique-se de que os numeros são positivos e não maiores do que o tamanho da sequencia de DNA")
         exit (1) 	# o programa finaliza se os números forem negativos ou maiores que o tamanho da sequência de DNA
 else:
     print ("São esperados 6 números inteiros")
-    exit (1)
-# o programa finaliza se os argumentos não forem inteiros
+    exit (1) # o programa finaliza se os argumentos não forem inteiros
 
 # extrair a sequência do CDS1 e verificar se inicia com o códon ATG
 cds1 = DNA[n1-1:n2] # subtrai 1 pois a sequência em python inicia em 0
